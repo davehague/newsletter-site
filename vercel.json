@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/send-newsletter",
+      "schedule": "0 14 * * *"
+    },
+    {
+      "path": "/api/cron/nightly-build",
+      "schedule": "0 2 * * *"
+    }
+  ]
+}

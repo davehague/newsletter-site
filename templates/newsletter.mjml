@@ -1,0 +1,173 @@
+<mjml>
+  <mj-head>
+    <mj-title>{{ARTICLE_TITLE}}</mj-title>
+    <mj-preview>{{ARTICLE_DESCRIPTION}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" />
+      <mj-text font-size="16px" color="#334155" line-height="1.6" />
+      <mj-button background-color="#2563eb" color="#ffffff" border-radius="6px" />
+      <mj-section background-color="#ffffff" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .article-content h1 { 
+        color: #0f172a !important; 
+        font-size: 28px !important; 
+        font-weight: bold !important;
+        margin-bottom: 16px !important;
+      }
+      .article-content h2 { 
+        color: #1e293b !important; 
+        font-size: 24px !important; 
+        font-weight: bold !important;
+        margin-bottom: 14px !important;
+        margin-top: 24px !important;
+      }
+      .article-content h3 { 
+        color: #334155 !important; 
+        font-size: 20px !important; 
+        font-weight: bold !important;
+        margin-bottom: 12px !important;
+        margin-top: 20px !important;
+      }
+      .article-content p { 
+        margin-bottom: 16px !important; 
+        line-height: 1.6 !important;
+      }
+      .article-content a { 
+        color: #2563eb !important; 
+        text-decoration: underline !important;
+      }
+      .article-content ul, .article-content ol {
+        margin-bottom: 16px !important;
+        padding-left: 20px !important;
+      }
+      .article-content li {
+        margin-bottom: 8px !important;
+        line-height: 1.6 !important;
+      }
+      .article-content blockquote {
+        border-left: 4px solid #e2e8f0 !important;
+        padding-left: 16px !important;
+        margin: 16px 0 !important;
+        font-style: italic !important;
+        color: #64748b !important;
+      }
+      .article-content code {
+        background-color: #f1f5f9 !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+        font-family: 'Monaco', 'Consolas', monospace !important;
+        font-size: 14px !important;
+      }
+      .article-content pre {
+        background-color: #1e293b !important;
+        color: #e2e8f0 !important;
+        padding: 16px !important;
+        border-radius: 6px !important;
+        overflow-x: auto !important;
+        margin: 16px 0 !important;
+      }
+      .article-content pre code {
+        background-color: transparent !important;
+        padding: 0 !important;
+        color: inherit !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f8fafc">
+    <!-- Header -->
+    <mj-section background-color="#ffffff" padding="30px 20px 20px 20px">
+      <mj-column>
+        <mj-text align="center" font-size="28px" font-weight="bold" color="#0f172a" padding-bottom="10px">
+          {{SITE_NAME}}
+        </mj-text>
+        <mj-text align="center" font-size="16px" color="#64748b" padding-bottom="20px">
+          Latest insights on web development and technology
+        </mj-text>
+        <mj-divider border-color="#e2e8f0" border-width="1px" />
+      </mj-column>
+    </mj-section>
+    
+    <!-- Article Title -->
+    <mj-section background-color="#ffffff" padding="20px 20px 0 20px">
+      <mj-column>
+        <mj-text font-size="36px" font-weight="bold" color="#0f172a" line-height="1.2" padding-bottom="15px">
+          {{ARTICLE_TITLE}}
+        </mj-text>
+        <mj-text font-size="18px" color="#64748b" line-height="1.4" padding-bottom="20px">
+          {{ARTICLE_DESCRIPTION}}
+        </mj-text>
+        <mj-text font-size="14px" color="#94a3b8" padding-bottom="30px">
+          Published on {{PUBLISHED_DATE}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Article Content -->
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-text css-class="article-content">
+          {{ARTICLE_CONTENT}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Tags -->
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text font-size="14px" color="#64748b" padding-bottom="10px">
+          <strong>Tags:</strong> {{ARTICLE_TAGS}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Call to Action -->
+    <mj-section background-color="#ffffff" padding="30px 20px">
+      <mj-column>
+        <mj-text align="center" font-size="18px" color="#334155" padding-bottom="20px">
+          Continue reading on our website
+        </mj-text>
+        <mj-button href="{{ARTICLE_URL}}" font-size="16px" padding="15px 30px" border-radius="6px">
+          Read Full Article
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Divider -->
+    <mj-section background-color="#f1f5f9" padding="0">
+      <mj-column>
+        <mj-divider border-color="#e2e8f0" border-width="2px" />
+      </mj-column>
+    </mj-section>
+    
+    <!-- Footer -->
+    <mj-section background-color="#f1f5f9" padding="30px 20px">
+      <mj-column>
+        <mj-text align="center" font-size="16px" color="#334155" padding-bottom="15px">
+          <strong>Thank you for reading!</strong>
+        </mj-text>
+        <mj-text align="center" font-size="14px" color="#64748b" padding-bottom="10px">
+          You received this email because you subscribed to {{SITE_NAME}}.
+        </mj-text>
+        <mj-text align="center" font-size="14px" color="#64748b" padding-bottom="20px">
+          Visit our website: <a href="{{SITE_URL}}" style="color: #2563eb; text-decoration: underline;">{{SITE_URL}}</a>
+        </mj-text>
+        <mj-social font-size="15px" icon-size="20px" mode="horizontal">
+          <mj-social-element name="twitter" href="#" />
+          <mj-social-element name="github" href="#" />
+          <mj-social-element name="linkedin" href="#" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    
+    <!-- Legal Footer -->
+    <mj-section background-color="#e2e8f0" padding="20px">
+      <mj-column>
+        <mj-text align="center" font-size="12px" color="#94a3b8" line-height="1.4">
+          © 2025 {{SITE_NAME}}. All rights reserved.<br/>
+          This email was sent from a notification-only address that cannot accept replies.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
